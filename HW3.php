@@ -11,7 +11,7 @@
    echo '<hr>';
    
    echo 'Задание 1.3<br>';
-   $data = array(
+   /*$data = array(
         date('d', $date[0]),
         date('d', $date[1]),
         date('d', $date[2]),
@@ -27,7 +27,17 @@
     );
    $minData = min($data);
    $maxMonth = max($month);
-   echo 'Наименьший день: ' . $minData . ', а Наибольший месяц: ' . $maxMonth;
+   echo 'Наименьший день: ' . $minData . ', а Наибольший месяц: ' . $maxMonth;*/
+   
+   $day = [];
+   $month = [];
+   $i = 0;
+   foreach ($date as $dat){
+	   $day[$i] = date('d', $dat);
+	   $month[$i] = date('m', $dat);
+	   $i++;
+   }
+   echo 'Наименьший день: ' . $minDay = min($day) . '. Наибольший месяц: ' . $maxDay = max($month);
    echo '<hr>';
    
    echo 'Задание 1.4<br>';
