@@ -1,8 +1,4 @@
 <?
-   //$t = rand(0, time());
-   //$t = rand(time(), 1);
-   //echo date('d-m-Y', $t);
-
    echo 'Задание 1.1-1.2';
    $date = array(
         rand(1, time()),
