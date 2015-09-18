@@ -90,30 +90,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $db->query("DELETE FROM ad WHERE ad_id=?d",$_GET['delete']);
     header("Location: HW10.php");
 } elseif(isset($_GET['id'])){
-    $selection_ad = $db->selectRow("SELECT * FROM ad "
+    $selected_ads = $db->selectRow("SELECT * FROM ad "
         . "LEFT JOIN cities on ad.id_city=cities.id_city "
         . "LEFT JOIN categories on ad.id_category=categories.id_category "
         . "LEFT JOIN types on ad.id_type=types.id_type "
         . "WHERE ad_id = ?d", $_GET['id']);
-    $type = $selection_ad['id_type'];
-    $smarty->assign('type', $type);
-    $user_name = clear($selection_ad['user_name']);
-    $smarty->assign('user_name', $user_name);
-    $email = clear($selection_ad['email']);
-    $smarty->assign('email', $email);
-    $otvet = $selection_ad['otvet'];
-    $smarty->assign('otvet', $otvet);
-    $phone = clear($selection_ad['phone']);
-    $smarty->assign('phone', $phone);
-    $id_city = $selection_ad['id_city'];
-    $smarty->assign('id_city', $id_city);
-    $id_category = $selection_ad['id_category'];
-    $smarty->assign('id_category', $id_category);
-    $ad_title = clear($selection_ad['ad_title']);
-    $smarty->assign('ad_title', $ad_title);
-    $ad_description = clear($selection_ad['ad_description']);
-    $smarty->assign('ad_description', $ad_description);
-    $price = $selection_ad['price'];
-    $smarty->assign('price', $price);
+    $smarty->assign('selected_ads', $selected_ads);
 }
 $smarty->display('HW10.tpl');
