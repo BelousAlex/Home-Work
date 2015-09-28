@@ -1,0 +1,8 @@
+<tr>
+    <td>{$ad->getId()}</td>
+    <td>{$ad->getAdTitle()}</td>
+    <td>{$ad->getUserName()}({$ad->getFullType()})</td>
+    <td>{$ad->getEmail()}</td>
+    <td>{$ad->getPrice()} руб.</td>
+    <td><a href="HW12.php?delete={$ad->getId()}" title='Удалить'><span class="glyphicon glyphicon-remove"></span></a>&nbsp;<a href="HW12.php?id={$ad->getId()}" title='Изменить'><span class="glyphicon glyphicon-wrench"></span></a></td>
+</tr>
