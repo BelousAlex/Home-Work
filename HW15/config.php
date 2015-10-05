@@ -3,8 +3,8 @@ error_reporting(E_ERROR|E_WARNING|E_PARSE|E_NOTICE); // error handling
 ini_set('display_errors', 1);
 ob_start();
 
-$smarty_root = "../../smarty/";
-$project_root = "../..";
+$smarty_root = __DIR__."/smarty/";
+$project_root = __DIR__;
 
 require $smarty_root.'libs/Smarty.class.php';
 require_once $project_root."/dbsimple/config.php";
