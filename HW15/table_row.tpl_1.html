@@ -1,0 +1,8 @@
+<tr>
+    <td>{$ad->getId()}</td>
+    <td>{$ad->getAdTitle()}</td>
+    <td>{$ad->getUserName()}({$ad->getFullType()})</td>
+    <td>{$ad->getEmail()}</td>
+    <td>{$ad->getPrice()} руб.</td>
+    <td><a class="delete btn btn-danger">Удалить</a>&nbsp;<a class="btn btn-info" href="HW15.php?id={$ad->getId()}" title='Изменить'>Изменить</a></td>
+</tr>
