@@ -17,7 +17,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     </head>
 
-    <body style="width:99%">
+    <body>
         <div class="row">
             {if isset($smarty.get.id)}<div class="col-md-12">{else}<div class="col-md-5" id="forma">{/if}
                 {include file='form.tpl'}                 

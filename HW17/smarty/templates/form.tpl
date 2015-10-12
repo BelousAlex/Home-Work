@@ -2,7 +2,7 @@
     <div class='col-md-offset-3'><h2 class="title sub-header">Подать объявление</h2></div>
 
     {if isset($selected_ads.ad_id)}
-        <div id="ad_id1" style="display: none">{$selected_ads.ad_id}</div>
+        <div id="ad_id1" >{$selected_ads.ad_id}</div>
     {/if}
 
     <div class="form-group">

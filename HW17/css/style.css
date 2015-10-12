@@ -1,3 +1,11 @@
+body{
+    width:99%;
+}
+
+div#ad_id1{
+    display: none;
+}
+
 td a#show_ad{
     width: 100%;
 }
