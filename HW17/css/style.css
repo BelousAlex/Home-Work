@@ -1,0 +1,15 @@
+td a#show_ad{
+    width: 100%;
+}
+
+a.del{
+    width: 89px;
+}
+
+.panel-body{
+    height: 60px;
+}
+
+.panel-body#description{
+    height: auto;
+}
