@@ -114,7 +114,7 @@ class workWithAd{
         . "WHERE ad_id = ?d", $_GET['id']);
         return $this->selected_ads;
     }
-    /*Редактирование данных в выбранном объявлении*/
+    /*Редактирование данных в выбранном объявлениии*/
     function changeAd($db){
         return $db->query("UPDATE ad SET user_name = ?,"
         . " id_type = ?d,"
